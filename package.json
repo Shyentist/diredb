@@ -1,0 +1,30 @@
+{
+  "name": "diredb",
+  "version": "0.0.1",
+  "description": "The Directory Data Base",
+  "main": "dire.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Pasquale Buonomo",
+  "license": "MIT",
+  "keywords": [
+    "NoSQL",
+    "persistence",
+    "json",
+    "database",
+    "minimalistic",
+    "javascript",
+    "directory-based",
+    "Node.js",
+    "in-memory",
+    "CRUD",
+    "fast",
+    "lightweight",
+    "no external dependencies",
+    "standalone"
+  ],
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
