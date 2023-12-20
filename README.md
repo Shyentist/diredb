@@ -17,7 +17,7 @@ DireDB is a simple file-based, NoSQL database for Node.js that stores collection
 You can install DireDB via npm using the following command:
 
 ```bash
-npm install diredb
+npm i diredb
 ```
 
 ## Getting Started
@@ -57,6 +57,7 @@ db.load().then(() => {
 ```
 
 ## Usage
+Remember to async/await the operations as needed.
 
 ### Creating a collection
 You can create a collection and add data to it using the `add` method:
@@ -75,6 +76,18 @@ Erasing a collection using the `drop` method is as simple as:
 
 ```js
 db.drop('users');
+```
+
+### Inserting data into an existing collection
+Adding documents/elements/items to a collection is just as straightforward:
+
+```js
+const newUsersData = [
+  { id: 3, name: 'Bob Smith', age: 28 },
+  { id: 4, name: 'Alice Johnson', age: 35 },
+];
+
+db.insert('users', newUsersData);
 ```
 
 ### Querying Data
@@ -99,7 +112,7 @@ Remove data from your collections with the `delete` method:
 db.delete('users', user => user.age < 25);
 ```
 
-### Retrieve Collections
+### Retrieving Collections
 You can retrieve entire collections in many ways:
 ```js
 // By querying
