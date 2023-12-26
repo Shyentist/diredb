@@ -57,7 +57,7 @@ db.load().then(() => {
 ```
 
 ## Usage
-Remember to async/await the operations as needed.
+Remember to await the operations (they are all async) as needed.
 
 ### Creating a collection
 You can create a collection and add data to it using the `add` method:
